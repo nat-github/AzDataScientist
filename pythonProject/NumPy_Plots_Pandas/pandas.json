@@ -1,0 +1,15 @@
+[
+  {
+    "WebTest2": {
+      "URL": "https://buccaneers-edge-router-stub.apps.pcf-t02-we.rabobank.nl/omnikassa-dashboard-login/",
+      "Login": "196739",
+      "App": "OmniKassa Onboarding"
+    }
+  },
+  {
+    "WebTest1": {
+      "Login": "196739",
+      "App": "OmniKassa Onboarding"
+    }
+  }
+]
