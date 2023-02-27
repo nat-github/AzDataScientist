@@ -2,7 +2,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn. metrics import classification_report
+from sklearn.metrics import classification_report
 from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.metrics import confusion_matrix
 import numpy as np
@@ -61,9 +61,9 @@ print('Predicted labels: ', penguin_predictions[:15])
 print('Actual labels   : ', y_penguin_test[:15])
 print(classification_report(y_penguin_test, penguin_predictions))
 
-print("Overall Accuracy:",accuracy_score(y_penguin_test, penguin_predictions))
-print("Overall Precision:",precision_score(y_penguin_test, penguin_predictions, average='macro'))
-print("Overall Recall:",recall_score(y_penguin_test, penguin_predictions, average='macro'))
+print("Overall Accuracy:", accuracy_score(y_penguin_test, penguin_predictions))
+print("Overall Precision:", precision_score(y_penguin_test, penguin_predictions, average='macro'))
+print("Overall Recall:", recall_score(y_penguin_test, penguin_predictions, average='macro'))
 
 # Print the confusion matrix
 mcm = confusion_matrix(y_penguin_test, penguin_predictions)
@@ -97,7 +97,5 @@ plt.ylabel('True Positive rate')
 plt.legend(loc='best')
 plt.show()
 
-auc = roc_auc_score(y_penguin_test,penguin_prob, multi_class='ovr')
+auc = roc_auc_score(y_penguin_test, penguin_prob, multi_class='ovr')
 print('Average AUC:', auc)
-
-
